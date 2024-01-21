@@ -13,5 +13,6 @@ export class MainController {
     @ConnectedSocket() socket: Socket,
     @SocketIO() io: Server
   ) {
+    console.log("New Socket connected: ", socket.id)
   }
 }
